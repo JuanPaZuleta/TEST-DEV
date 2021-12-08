@@ -31,7 +31,7 @@ class TestVehicle:
         vehicle = models.Vehicle(vehicle_type=car, passengers=10)
         assert not vehicle.can_start()
 
-    @pytest.mark.skip  # Remove
+    @pytest.fixture  # Remove
     def test_vehicle_distribution(self, car, van):
         # TODO: implement a method called "get_distribution" that returns a matrix filled of booleans
         # with the "standard distribution" in a vehicle, from top to bottom and left to right.
@@ -57,7 +57,7 @@ class TestVehicle:
         distribution_expected = [[True, True], [True, True], [True, False]]
         assert vehicle.get_distribution() == distribution_expected
 
-    @pytest.mark.skip  # Remove
+    @pytest.fixture  # Remove
     def test_valid_number_plate(self):
         # TODO: implement a function called "validate_number_plate"
         # a valid number plate consists of three pairs of alphanumeric chars separated by hyphen
