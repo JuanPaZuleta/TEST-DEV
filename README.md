@@ -9,7 +9,7 @@ What he has told us is that the software was "almost" done and that any develope
 ## Your mission is:
 
 - Clone this project
-- Disable the unit tests marked as `@pytest.mark.skip`
+- Disable the unit tests marked as `@pytest.mark.skip` this instruction is little ambiguous
 - Build the functionalities needed for the app to pass all the tests executing `docker-compose run --rm test`
 - There's code that's been written way too fast and it probably doesn't meet our clean architecture, could you refactor it?
 - Send us your repository link
